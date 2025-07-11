@@ -1,4 +1,4 @@
-# AccessibilityAccessPad by Adarsh T.
+# AccessibilityAccessPad by Adarsh
 
 AAPad is an 8 key macropad with a rotary encoder, an OLED Display. It also has 9 WS2812B Leds, and uses QMK firmware
 
