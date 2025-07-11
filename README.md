@@ -6,63 +6,72 @@ It serves as a plug & play device integrated with the Windows accessibility tool
 
 ## Features:
 - Dual layer PLA case (hopefully made out of wood, later)
-- 128x32 OLED Display, to allow bystanders to assist the user whenever necessary (it displays messages regarding what the user is attempting to do)
+- Plexiglass window, displaying the diodes and silkscreened logo on the PCB (also my glasses )
+- 128x32 OLED Display, to allow bystanders to assist the user whenever necessary
 - EC11 Rotary encoder, for tactile feedback
-- 2 WS2812B RGB LEDs. One for underglow, and one that diffuses throughout the case
+- 9 WS2812B RGB LEDs. One for the accessibility icon, and the rest for backlighting
 - 8 Keys (for functions, see below)
 
 ## Planned Features:
 - [VIA](https://www.caniusevia.com/) support!
+- Reactive backlight for each key
 
 ## CAD Model:
-Everything fits together using 5 M3 Bolts and heatset inserts. 4 for the case, one for the PCB. Also, it has a 5 degree tilt
+Everything fits together using 6 M3 Bolts and heatset inserts. 4 for the case, two for the PCB.
 
-It has 3 separate printed pieces. The angle, the base where the PCB sits, and the top cover. it also has 2 acrylic plates. One to cover the electronics, the other to hold the switches
+It has 2 separate printed pieces. The base, where the PCB is mounted, and the cover.
 
-<img src=assets/cad.png alt="Schematic" width="500"/>
+<img src=assets/IMAGE_CAD.png alt="3D Cad Model" width="500"/>
 
-Made in Fusion360. Nifty
+Made in Fusion360. First time using it!
 
 
 ## PCB
-Here's my PCB! It was made in KiCad. The silkscreen was imported from a Figma image.
+Here's my PCB! It was made in KiCad. The silkscreen(s) was imported from Canva. I also put a quote on the top right, because why not?
 
 Schematic
-<img src=assets/schematic.png alt="Schematic" width="300"/>
+<img src=assets/IMAGE_SCHEM.png alt="Schematic" width="300"/>
 
 PCB
-<img src=assets/pcb.png alt="Schematic" width="300"/>
-
-I used MX_V2 for the keyswitch footprints. I think in retrospect, I should've added a ground plane
+<img src=assets/IMAGE_PCB.png alt="PCB" width="300"/>
 
 ## Firmware Overview
 This hackpad uses [QMK](https://qmk.fm/) firmware for everything. 
 
-- the rotary encoder changes volume. press to mute
-- The 4 keys currently act as macros I dynamically change in VIA.
-- The OLED is a cat!! Bongocat!! :3
+- The rotary encoder changes volume, press to mute
 
-<img src=assets/bongocat.png alt="Bongo Cat" width="300"/>
+- The 8 keys currently act as functions/macros I preassigned in QMK.
+    1. Text-to-Speech (TTS) Toggle
+        - Reads aloud selected text on screen
+    2. Zoom In
+    3. Zoom Out
+    4. Speech-to-Text Activation
+        - Starts or stops dictation mode to convert speech into text
+    5. Adjusts Cursor Speed
+    6. Activates Computer speakers to announce a custom message (preset "I need assistance")
+    7. High Contrast Mode Toggle
+    8. Opens Accessibility Settings Window
 
-I might add more in the future! That's it for now
+- The OLED reads out the function of a button whenever it is pressed. The goal is so that any bystander who is called to assist the user may know what the device is suppose to be doing at any given input.
+
+- *Note*: **Please suggest any new functions for each key!!** I have a very limited understanding of accessibility needs at the moment, though I hope my preset functions serve you well.
 
 ## BOM:
 Here should be everything you need to make this hackpad
 
-- 4x Cherry MX Switches
-- 4x DSA Keycaps
-- 5x M3x5x4 Heatset inserts
+- 8x Cherry MX Style Switches
+- 8x DSA Keycaps
+- 6x M3x5x4 Heatset inserts
 - 3x M3x16mm SHCS Bolts
-- 2X M3x12mm SHCS Bolts
-- 5x 1N4148 DO-35 Diodes.
-- 2x WS2812B LEDs
+- 9x 1N4148 DO-35 Diodes.
+- 9x WS2812B LEDs
 - 1x 0.91" 128x32 OLED Display
 - 1x EC11 Rotary Encoder
 - 1x XIAO RP2040
-- 1x Case (3 printed parts, 2 laser cut parts)
+- 1x Case (2 printed parts, PLA)
 
 
 ## Extra stuff
-Honestly I'm not quite too sure what to add here. Favourite meme? a joke?? Uhhh you can imagine it
+Thanks so much for reading to the end, this is my first real hardware project. Stay tuned to my GitHub for more :\)\)
 
-Oh fun fact: I built mine in SF the day before github universe LOL
+~ Adarsh
