@@ -21,7 +21,7 @@ Everything fits together using 6 M3 Bolts and heatset inserts. 4 for the case, t
 
 It has 2 separate printed pieces. The base, where the PCB is mounted, and the cover.
 
-<img src=assets/IMAGE_CAD.png alt="3D Cad Model" width="500"/>
+<img src=Assets/IMAGE_CAD.png alt="3D Cad Model" width="500"/>
 
 Made in Fusion360. First time using it!
 
@@ -30,10 +30,10 @@ Made in Fusion360. First time using it!
 Here's my PCB! It was made in KiCad. The silkscreen(s) was imported from Canva. I also put a quote on the top right, because why not?
 
 Schematic
-<img src=assets/IMAGE_SCHEM.png alt="Schematic" width="300"/>
+<img src=Assets/IMAGE_SCHEM.png alt="Schematic" width="300"/>
 
 PCB
-<img src=assets/IMAGE_PCB.png alt="PCB" width="300"/>
+<img src=Assets/IMAGE_PCB.png alt="PCB" width="300"/>
 
 ## Firmware Overview
 This hackpad uses [QMK](https://qmk.fm/) firmware for everything. 
