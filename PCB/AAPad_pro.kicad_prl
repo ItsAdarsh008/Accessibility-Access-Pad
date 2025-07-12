@@ -1,12 +1,7 @@
 {
   "board": {
-<<<<<<< HEAD
-    "active_layer": 1,
-    "active_layer_preset": "",
-=======
     "active_layer": 0,
-    "active_layer_preset": "All Layers",
->>>>>>> 966a317d7769d576f28e04c2a03a35acff491cbc
+    "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -50,10 +45,6 @@
       "pads",
       "zones",
       "drc_warnings",
-<<<<<<< HEAD
-      "drc_exclusions",
-=======
->>>>>>> 966a317d7769d576f28e04c2a03a35acff491cbc
       "locked_item_shadows",
       "conflict_shadows",
       "shapes"
@@ -67,7 +58,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "AAPad_pcb.kicad_prl",
+    "filename": "AAPad_pro.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -96,18 +87,6 @@
       9
     ],
     "col_widths": [
-<<<<<<< HEAD
-      162,
-      147,
-      91,
-      67,
-      91,
-      91,
-      91,
-      71,
-      91,
-      91
-=======
       294,
       279,
       173,
@@ -118,7 +97,6 @@
       126,
       173,
       173
->>>>>>> 966a317d7769d576f28e04c2a03a35acff491cbc
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
